@@ -2,7 +2,11 @@ import heapq
 import sys
 
 n = int(input())
+
+# [시작시간, 종료시간] 의 형식으로 리스트에 입력
 data = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+
+data.sort() # 강의 시작시간이 빠른 순으로 정렬
 
 room = []
 # 첫번째 강의의 종료시간을 힙큐에 push
